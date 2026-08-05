@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block titulo %}<title>Editar Milkshake</title>{% endblock %}
+{% block content %}
+<div>
+    <h1>Editar Milkshake</h1>
+    <form action="{{ url_for('edit_milk', uid=milkshake.uid) }}" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="{{ milkshake.nome }}" required><br>
+        <label for="sabor">Sabor:</label>
+        <input type="text" id="sabor" name="sabor" value="{{ milkshake.sabor }}" required><br>
+        <label for="cobertura">Cobertura:</label>
+        <input type="text" id="cobertura" name="cobertura" value="{{ milkshake.cobertura }}"><br>
+        <label for="confeitos">Confeitos:</label>
+        <input type="text" id="confeitos" name="confeitos" value="{{ milkshake.confeitos }}"><br>
+        <label for="tamanho">Tamanho:</label>
+        <input type="text" id="tamanho" name="tamanho" value="{{ milkshake.tamanho }}" required><br>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" value="{{ milkshake.preco }}" required><br>
+        <button type="submit">Salvar</button>
+    </form>
+</div>
+{% endblock %}
