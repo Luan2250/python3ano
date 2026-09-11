@@ -4,3 +4,4 @@ repositório para os projetos de python
 esqueci de colocar os que mandei zipado
 03/09 - Atividade de fixação 01 - Series
 08/09 - Atividade de Fixação 02 - Dataframe
+11/09 - Atividade de Fixação 03 - Integrando dados de diversas origens
